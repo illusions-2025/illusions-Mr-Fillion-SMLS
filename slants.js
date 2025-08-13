@@ -51,7 +51,7 @@ function drawCircles(stillColour){
         y = 50+j*circlewidth*2;
         
         for (let i = 0; i < 16; i++){
-            if (stillColour){
+            if (!stillColour){
                 stroke(((i+j)%2)*255); 
                 fill(((i+j)%2)*255); 
             } else if (stillColour == 2) {
