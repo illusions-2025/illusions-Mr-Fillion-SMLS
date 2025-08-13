@@ -6,7 +6,7 @@ function setup() {
 
     //create a drawing surface on to the web page
     //this drawing surface is 1000 X 600
-    canvas = createCanvas(1000,600);
+    canvas = createCanvas(1000,600);  // x, y
 
     //move canvas to make way for radio buttons
     canvas.position(20,20);
@@ -38,6 +38,8 @@ function setup() {
 //but not both (ie no illusion)
 function drawCircles(stillColour){
 
+    ellipse(100,100, 100, 100);
+
 }
 
 //if stillColour is truthy, image will be black or white
@@ -53,7 +55,7 @@ function drawLines(stillColour){
 //so that the illusion can be redrawn correctly after user input interaction
 function draw() {
     background(150)
-    c = int(colourMode.value());
+    c = int(colourMode.value());   // this is because the colour coding we did earlier requires strings. We used "2", "1", "0". 
     drawCircles(c);
     drawLines(c);
     //noLoop();
