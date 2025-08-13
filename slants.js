@@ -51,9 +51,16 @@ function drawCircles(stillColour){
         y = 50+j*circlewidth*2;
         
         for (let i = 0; i < 16; i++){
-
-            stroke(((i+j)%2)*255); 
-            fill(((i+j)%2)*255); 
+            if (stillColour){
+                stroke(((i+j)%2)*255); 
+                fill(((i+j)%2)*255); 
+            } else if (stillColour == 2) {
+                stroke(0)
+                fill(0)
+            } else if (stillColour == 1) {
+                stroke(255)
+                fill(255)
+            }
 
             ellipse(x+(i*circlewidth),y, circlewidth, circlewidth);
         }
