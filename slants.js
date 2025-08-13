@@ -39,10 +39,11 @@ function setup() {
 function drawCircles(stillColour){
 
     let x = 50;
+    let y = 50;
     stroke(0) // black outside
     fill(0); // black inside
     r = 1000/(16*2)
-    for (int i = 0; i < 16; i++):
+    for (let i = 0; i < 16; i++):
         ellipse(r*i, r, r, r);
 
 
