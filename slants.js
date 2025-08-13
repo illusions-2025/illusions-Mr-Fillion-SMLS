@@ -38,7 +38,14 @@ function setup() {
 //but not both (ie no illusion)
 function drawCircles(stillColour){
 
-    ellipse(100,100, 100, 100);
+    let x = 50;
+    stroke(0) // black outside
+    fill(0); // black inside
+    r = 1000/(16*2)
+    for (int i = 0; i < 16; i++):
+        ellipse(r*i, r, r, r);
+
+
 
 }
 
