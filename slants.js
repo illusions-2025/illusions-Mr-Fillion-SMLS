@@ -46,7 +46,7 @@ function drawCircles(stillColour){
     let x = offset+circlewidth/2;
     let y = 100;
     for (let i = 0; i < 16; i++){
-        stroke(0) // black outside
+        stroke(0); // black outside
         fill(0); // black inside
         ellipse(x+(i*circlewidth),y, circlewidth, circlewidth);
     }
