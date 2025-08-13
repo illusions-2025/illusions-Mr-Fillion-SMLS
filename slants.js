@@ -42,13 +42,18 @@ function drawCircles(stillColour){
     let offset = 100;
     let linewidth = width-(2*offset);
     circlewidth=linewidth/16
-
-    let x = offset+circlewidth/2;
-    let y = 100;
-    for (let i = 0; i < 16; i++){
-        stroke(0); // black outside
-        fill(0); // black inside
-        ellipse(x+(i*circlewidth),y, circlewidth, circlewidth);
+    let y = 50
+    let x = 50
+    
+    for (let j = 0; j < 6; j++){
+        x = offset+circlewidth/2;
+        y = 50+j*circlewidth*2;
+        
+        for (let i = 0; i < 16; i++){
+            stroke(0); // black outside
+            fill(0); // black inside
+            ellipse(x+(i*circlewidth),y, circlewidth, circlewidth);
+        }
     }
 
 
